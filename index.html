@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/73b5ed437c.js" crossorigin="anonymous"></script>
+    <script src="js/push.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+    <nav class="navbar">
+        <a href="#"  class="logo">Pokedex</a>
+        <button class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+            <li class="nav-menu-item">
+                <a href="" class="nav-menu-link">Detalles</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="" class="nav-menu-link">inforamcion</a>
+            </li>
+            <li class="nav-menu-item">
+                <a href="" class="nav-menu-link">Contacto</a>
+            </li>    
+        </ul>
+    </nav>
+    </div>
+   
+    <div class="busqueda">
+        <input class="poke" id="poke" type="text" placeholder="nombre del pokemon">
+        <button class="buscar" id="buscar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <div class="content" id="content">
+        <div class="tarjeta" id="tarjeta">
+            <img class="imagenAnimado" src="" alt="" id="image">
+            <p class="nombre" id="nombre"></p>
+        </div>
+        
+        <div class="info" id="info">
+            <p>Aun no se ha buscado el pokemon</p>
+        </div>
+    </div>
+
+    <div class="description" id="description">
+        <p class="detalle" id="detalle1"></p>
+        <p class="detalle" id="detalle2">Movimientos Especiales</p>
+        <p class="detalle" id="detalle3"></p>
+    </div>
+
+    <a class="btn" href="#">
+        <li><i class="fa-solid fa-angle-up"></i></li>
+    </a>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js" integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
